@@ -20,26 +20,13 @@ yarn
 ```
 Add .env file in root directory, and should look like this
 ```
-# Node env
-NODE_ENV=dev
-
-# Port number
-PORT=300-
-
-# File Paths
-ROOT_PATH=http://localhost:5000/uploads/
-WRITE_PATH=public/uploads
-
-# Mongo Url
-MONGODB_URL="user-mongodb-url"
-
-# JWT
-# JWT secret key -- TYtaGSPFKiutyVtPIhzR
-JWT_SECRET=TYtaGSPFKiutyVtPIhzR
-# Number of minutes after which an access token expires
-JWT_ACCESS_EXPIRATION_DAYS=90
-# Number of days after which a refresh token expires
-JWT_REFRESH_EXPIRATION_DAYS=182
+NODE_ENV = dev
+PORT = 3000
+JWT_SECRET = "your_secret"
+JWT_EXPIRATION_ACCESS = "90d"
+JWT_EXPIRATION_REFRESH = "365d"
+ROOT_PATH = "http://localhost:3000/uploads/"
+MONGO_URI = "mongodb://localhost:27017/db_name"
 ```
 ## Run Project
 In root directory run the command.
